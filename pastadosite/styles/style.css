@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Rubik+Glitch&display=swap');
+
+
+*{
+    font-family:'Nunito', sans-serif;
+
+
+    /*variaveis*/
+
+    --color-principal:#F78B1F;
+    --color-vermelho:#ff6056;
+    --color-amarelo:#ffb044;
+    --color-verde:#00ca4e;
+    --color-cinza-claro:#f5f5f5;
+    --color-cinza-medio:#e1dfe1;
+    --color-cinza-escuro:#c0bfc0;
+    --color-cinza-destaque: #363636;
+    --color-cinza-destaque-escuro: #000000;
+}
+
+body{
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+input[type="text" i]:focus-visible{
+    outline:none;
+}
+textarea:focus-visible{
+    outline: none;
+}
+.display-none{
+    display: none;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++HEADER+++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    box-shadow: 1px 4px 11px rgb(0 0 0 / 19%);
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.linkWhats{
+    position: fixed;
+    width: 40px;
+    left: 85vw;
+    top: 85vh;
+}
+.principalHeader{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logoHead{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+.textHeader{
+    display: none;
+}
+.photohead{
+
+    width: 40px;
+}
+.burguerIcon{
+    margin-right: 4%;
+}
+.burguer{
+    width: 40px;
+}
+
+
+.antes-logo{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.185);
+}
+
+
+.mobileNav{
+    width: 100%;
+    text-align: center;
+    border-top: var(--color-principal) solid;
+    padding: 1%;
+    font-weight: 300;
+}
+.navMobileText{
+   
+}
+.navMobileText:hover{
+    
+    background-color: var(--color-cinza-escuro);
+}
+
+
+.textLinkHeader{
+    cursor: pointer;
+}
+.textLinkHeader:hover{
+    color: var(--color-principal);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^MAIN^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^MAIN^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^^^^MAIN^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+.main{
+    background-color: var(--color-cinza-claro);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+.titulo{
+    font-size: 24px;
+    margin-top: 62px;
+    margin-bottom: 15px;
+    color: var(--color-cinza-destaque);
+    font-weight: 800;
+}
+
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^CARROSEL^^^^^^^^^^^^^^^^^^^^^^*/
+
+.bemvindo{
+    margin-top: 111px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.bentxt{
+    font-size: 30px;
+    font-weight: 800;
+}
+.benFont{
+    font-size: 23px;
+
+    font-weight: 300;
+}
+
+
+#slider{
+    width: 80%;
+    height: 250px;
+    background-color: var(--color-cinza-destaque);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    overflow: hidden;
+    border-radius: 17px;
+    margin-top: 30px;
+
+}
+#slider img{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    object-fit: cover;
+    transition: 1.5s;
+}
+#slider img.selected{
+    opacity: 1;
+}
+
+
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^SERVICOS^^^^^^^^^^^^^^^^^^^^^^*/
+.servicos{
+    width: 100%;
+    display: contents;
+}
+
+.servicosCards{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+.mtop{
+    margin-top: 25px;
+}
+.cardServico{
+    padding-top: 10px;
+    background:white;
+    border-radius: 10px;
+    width: 270px; 
+    height: 200px; 
+    display: flex; 
+    gap: 10px;
+    align-items: center; 
+    flex-direction: column;
+    box-shadow: 1px 4px 11px rgb(0 0 0 / 19%);
+}
+.iconService{
+    width: 131px;
+}
+
+.buttonServicos{
+    width: 270px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--color-principal);
+    color: white;
+    font-weight: 700;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^FORM^EMAIL^^^^^^^^^^^^^^^^^^^^^*/
+
+.formEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.divEmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 17px;
+    padding: 3.5% 2%;
+    width: 70%;
+    border-radius: 12px;
+    background-color: var(--color-cinza-destaque);
+    box-shadow: 1px 4px 11px rgb(0 0 0 / 24%);
+
+}
+
+.part01-mail{
+    display: contents;
+}
+
+.boxText{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
+.input-mail{
+    
+}
+.button-mail{
+    font-size: medium;
+    background-color: var(--color-principal);
+    color: white;
+}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+.footer{
+    width: 100%;
+    background-color: var(--color-cinza-medio)
+}
+.gerais_div_footer{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    box-shadow: 1px 4px 11px rgb(0 0 0 / 19%);
+    width: 80%;
+    max-height: 140px;
+    min-height: 140px;
+}
+
+
+.footer_esquerda{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 17px;
+
+
+    background: linear-gradient(to right, white 70%, var(--color-cinza-claro));
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    
+}
+.footerLogo{
+    width: 70px;
+}
+
+
+.horario{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+
+}
+.horario_flex{
+    padding-left: 17px;
+    background: linear-gradient(to right, white 70%, var(--color-cinza-claro));
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.tittleFooter{
+    font-weight: bold;
+}
+.textFotter{
+
+}
+.morgemSpace{
+    margin-left: 5%;
+}
+.paddingSpace{
+    padding-left: 17px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px){
+.linksHead{
+    display: none;
+}
+}
+
+/*$$$$$$$$$$$$$TABLET$$$$$$$$$$TABLET$$$$$$$$$$$$TABLET$$$$$$$$$$$$$$$TABLET$$$$$$$$$$$$$$$$$$$$$*/
+
+
+@media (min-width: 740px) and (max-width:1199px){
+
+.titulo{
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 48px;
+    text-shadow: 5px 6px 3px rgb(0 0 0 / 12%);
+}
+
+
+
+    /*header*/
+.header{
+   
+}
+.photohead {
+    width: 50px;
+}
+.linkWhats{
+    width: 66px;
+}
+.navMobileText {
+    font-size: x-large;
+    margin-bottom: 7px;
+}
+
+
+
+
+    /*main*/
+
+/*^^^^^^^^^^^^^^^^^^^^^^CARROSEL^^^^^^^^^^^^^^^^^^^^^^*/
+.bemvindo{
+    margin-top: 117px;
+}
+.bentxt{
+    font-size: 35px;
+}
+.benFont {
+    font-size: 26px;
+}
+
+#slider{
+    height: 450px;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^SERVICOS^^^^^^^^^^^^^^^^^^^^^^*/
+
+.servicosCards {
+    gap: 39px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+.cardServico{
+    box-shadow: 7px 11px 18px rgb(0 0 0 / 21%);
+}
+.iconService{
+
+}
+.buttonServicos{
+    margin-top: 80px;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^FORM^EMAIL^^^^^^^^^^^^^^^^^^^^^*/
+
+.divEmail{
+    gap: 34px;
+    border-radius: 24px;
+    box-shadow: 9px 12px 11px rgb(0 0 0 / 15%);
+    width: 70%;
+}
+
+.input-mail{
+    height: 30px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.button-mail{
+    height: 50px;
+    border-radius: 6px;
+    font-size: x-large;
+    
+}
+
+.boxText{
+    font-size: medium;
+    height: 270px;
+    border-radius: 6px;
+}
+
+
+
+    /*footer*/
+
+.gerais_div_footer{
+    max-height: 180px;
+    min-height: 180px;
+    box-shadow: 1px 4px 11px rgb(0 0 0 / 23%);
+}
+.footer_esquerda {
+    border-top-right-radius: 39px;
+    border-bottom-right-radius: 39px;
+    
+}
+.footerLogo {
+    width: 91px;
+}
+
+
+.tittleFooter{
+    font-size: 31px;
+}
+.textFotter{
+    font-size: 25px;
+}
+
+
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%DESKTOPS%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%DESKTOPS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%DESKTOPS%%%%%%%%%%%%%%%%*/
+/*%%%%%%%%%%%%%%%%%%%DESKTOPS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/*%%%%%DESKTOPS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (min-width: 1200px){
+.mobileNav{
+    display: none;
+}
+.burguerIcon{
+    display: none;
+}
+.linksHead{
+    display: flex;
+    margin-right: 4%;
+    color: var(--color-cinza-destaque);
+}
+}
+
+@media (min-width: 1200px) and (max-width:1800px){
+
+
+/*whatever*/
+.titulo{
+    font-size: 48px;
+}
+
+
+
+
+/*$$$$$$$$$header$$$$$$$$$$$*/
+
+.header{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.principalHeader{
+    height: 150px;
+}
+.logoHead{
+    gap: 40px;
+}
+.textHeader{
+    display: flex;
+    gap: 15px;   
+    font-size: 30px;
+}
+.photohead {
+    width: 76px;
+}
+.linksHead{
+    gap: 34px;
+    font-size: 29px;
+
+}
+.linkWhats{
+    width: 80px;
+}
+
+/*$$$$$main$$$$$$main$$$$$$$*/
+
+
+.bemvindo{
+    display: none;
+}
+#slider{
+    height: 432px;
+    width: 54%;
+    margin-top: 191px;
+}
+
+
+/*servicos*/
+
+.servicosCards{
+    gap: 77px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-top: 13px;
+}
+.cardServico{
+    padding-top: 20px;
+    font-size: 24px;
+    border-radius: 20px;
+    width: 310px;
+    height: 283px;
+    gap: 12px;
+    box-shadow: 8px 10px 11px rgb(0 0 0 / 16%);
+}
+.iconService{
+    width: 175px;
+}
+
+.buttonServicos{
+    width: 520px;
+    height: 70px;
+    font-size: 24px;
+    margin-top: 94px;
+    box-shadow: 6px 8px 9px rgb(0 0 0 / 12%);
+}
+
+
+/* email */
+
+.divEmail{
+    padding: 1%;
+    width: 30%;
+    font-size: 19px;
+    
+}
+.boxText{
+    height: 199px;
+    font-size: 19px;
+}
+
+
+
+/**%^^^^^^^^^^^^^^^^^FOOTER^^^^^^^^^^^^^^*/
+/**%^^^^^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^*/
+/**%^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
