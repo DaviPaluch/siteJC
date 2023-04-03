@@ -1,0 +1,38 @@
+
+.photoContact{
+    width: 30%;
+}
+
+.divContato{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: start;
+
+    
+}
+.divContato img{
+    width: 30px;
+}
+.txtCto01{
+    color: black;
+    margin-left: 9px;
+}
+
+
+@media (min-width: 740px){
+    .divContato{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .divContato img{
+        width: 40px;
+    }
+    .txtCto01{
+        margin-left: 15px;
+    }
+    .photoContact{
+        width: 15%;
+    }
+}

@@ -12,20 +12,20 @@
         <header style="position: fixed; width: 100vw; z-index: 1000;">
             <div class="header">
                 <div class="principalHeader">
-                    <div class="logoHead" id="logoHome" redirects="index"><img src="image/logoPadraoSmall.png" alt="" class="photohead"><div class="textHeader"><p>Projetos e Laudos Técnicos</p></div></div>
+                    <div class="logoHead" id="logoHome" redirects="index" onclick="otherPage('index');"><img src="image/logoPadraoSmall.png" alt="" class="photohead"><div class="textHeader"><p>Projetos e Laudos Técnicos</p></div></div>
                     <div class="linksHead">
-                        <p id="indexLink" redirects="index" class="textLinkHeader">HomePage</p>
-                        <p id="servicosLink" redirects="servicos" class="textLinkHeader">Serviços</p>
-                        <p id="contatoLink" redirects="contato" class="textLinkHeader">Contato</p>
-                        <p id="empresaLink" redirects="empresa" class="textLinkHeader">Empresa</p>
+                        <p class="textLinkHeader" onclick="otherPage('index');">HomePage</p>
+                        <p class="textLinkHeader" onclick="otherPage('servicos');">Serviços</p>
+                        <p class="textLinkHeader" onclick="otherPage('contato');">Contato</p>
+                        <p class="textLinkHeader" onclick="otherPage('empresa');">Empresa</p>
                     </div>
                     <div class="burguerIcon" id="clickNavHeader" show="False"><img src="image/burguer icon.png" alt="" class="burguer"></div>
                 </div>
                 <div id="navMobile" class="mobileNav">
-                    <div class="navMobileText" id="indexMLink" redirects="index"><p>HomePage</p></div>
-                    <div class="navMobileText" id="servicosMLink" redirects="servicos"><p>Serviços</p></div>
-                    <div class="navMobileText" id="contatoMLink" redirects="contato"><p>Contato</p></div>
-                    <div class="navMobileText" id="empresaMLink" redirects="empresa"><p>Empresa</p></div>
+                    <div class="navMobileText" onclick="otherPage('index');"><p>HomePage</p></div>
+                    <div class="navMobileText" onclick="otherPage('servicos');"><p>Serviços</p></div>
+                    <div class="navMobileText" onclick="otherPage('contato');"><p>Contato</p></div>
+                    <div class="navMobileText" onclick="otherPage('empresa');"><p>Empresa</p></div>
                 </div>
                 <div class="linkPages"></div>
                 <img src="image/whats_logo.png" alt="" class="linkWhats" redirects="Whats" id="buttonWhats">
@@ -53,7 +53,7 @@
                     <div class="cardServico"><p>PARECER TÉCNICO</p><div><img src="image/engrenagem.png" alt="" class="iconService"></div></div>
                     <div class="cardServico"><p>TESTE DE CARGA/GANCHO</p><div><img src="image/gancho.png" alt="" class="iconService"></div></div>
                     <div class="cardServico"><p>ENSAIOS NÃO DESTRUTIVOS  </p><div><img src="image/naodestrutivos.png" alt="" class="iconService"></div></div>
-                    <div class="cardServico"><p>DSFBJDFS DSFHJJKFDSH</p><div><img src="" alt="" class="iconService"></div></div>
+                    <div class="cardServico"><p>MEDIÇÃO DA CAPACIDADE VOLUMÉTRICA DE TANQUES</p><div><img src="image/caminhao.png" alt="" class="iconService"></div></div>
                 </div>
                 <div class="buttonServicos" id="buttonServices" redirects="servicos">
                         <p>VEJA TODOS OS NOSSOS SERVIÇOS</p>
@@ -67,10 +67,11 @@
                     <form action="https://formsubmit.co/jcprojetoslaudos@gmail.com" method="POST" style="display: contents;">
                         <div class="part01-mail">
                             <input type="email" class="input-mail" name="email" placeholder="e-mail" required>
-                            <input type="text" class="input-mail" name="name" placeholder="nome" required>
+                            <input type="text" class="input-mail" name="nome" placeholder="nome" required>
+                            <input type="number" class="input-mail" name="numero-de-celular" placeholder="numero de celular com DDD" required>
                         </div>
                         <input type="hidden" class="input-mail" name="_captcha"f value="false">
-                        <input type="hidden" class="input-mail" name="_next" value="https://http://127.0.0.1:5501/paginas/obrigado">
+                        <input type="hidden" class="input-mail" name="_next" value="http://127.0.0.1:5501/paginas/obrigado.html">
                         <textarea name="menssage" id="boxText" class="boxText" cols="30" rows="10" placeholder="Coloque seu comentário aqui..." required></textarea>
                         <button type="submit" class="button-mail" >Enviar</button>
                     </form>
@@ -78,32 +79,57 @@
             </div>
         </main>
         <footer class="footer">
-            <div class="footer_esquerda gerais_div_footer">
-                <div><img src="image/logoPadraoSmall.png" alt="" class="footerLogo"></div>
-                <div>
-                    <div style="color: var(--color-principal);"><p class="tittleFooter">JC Projetos e Laudos Técnicos</p></div>
-                    <div><p class="textFotter">Sua força é a nossa marca</p></div>
+            <div class="footerDesk">
+                <div class="">
+                    <div><img src="image/logoPadraoSmall.png" alt="" class="footerLogo"></div>
                 </div>
-            </div>
-            <div class="horario">
-                <div class="horario_flex gerais_div_footer">
-                    <div class="paddinSpace morgemSpace">
-                        <div style="color: var(--color-principal);"><p class="tittleFooter">Horarios de funcionamento</p></div>
-                        <div class="horarioSpace"><p class="textFotter">De Segunda a Sexta-feira</p></div>
-                        <div class="horarioSpace"><p class="textFotter">das 8:00 as 19:00</p></div>
+                <div class="">
+                    <div class="">
+                        <div class="">
+                            <div style="color: var(--color-principal);"><p class="tittleFooter">Horarios de funcionamento</p></div>
+                            <div class="horarioSpace"><p class="textFotter">De Segunda a Sexta-feira</p></div>
+                            <div class="horarioSpace"><p class="textFotter">das 8:00 as 19:00</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <div style="color: var(--color-principal);"><p class="tittleFooter">Contato</p></div>
+                        <div class="contatoSpace"><div></div><p class="textFotter">(41) 99648-2073</p></div>
+                        <div class="contatoSpace"><div></div><p class="textFotter">(41) 99648-2073</p></div>
+                        <div class="contatoSpace"><div></div><p class="textFotter">sdfsdfd@dfgfsd.com</p></div>
                     </div>
                 </div>
             </div>
-            <div class="footer_esquerda gerais_div_footer">
-                <div class="morgemSpace">
-                    <div style="color: var(--color-principal);"><p class="tittleFooter">Contato</p></div>
-                    <div class="contatoSpace"><div></div><p class="textFotter">(41) 99648-2073</p></div>
-                    <div class="contatoSpace"><div></div><p class="textFotter">(41) 99648-2073</p></div>
-                    <div class="contatoSpace"><div></div><p class="textFotter">sdfsdfd@dfgfsd.com</p></div>
+            <div class="footerMobile">
+                <div class="footer_esquerda gerais_div_footer">
+                    <div><img src="image/logoPadraoSmall.png" alt="" class="footerLogo"></div>
+                    <div>
+                        <div style="color: var(--color-principal);"><p class="tittleFooter">JC Projetos e Laudos Técnicos</p></div>
+                        <div><p class="textFotter">Sua força é a nossa marca</p></div>
+                    </div>
+                </div>
+                <div class="horario">
+                    <div class="horario_flex gerais_div_footer">
+                        <div class="paddinSpace morgemSpace">
+                            <div style="color: var(--color-principal);"><p class="tittleFooter">Horarios de funcionamento</p></div>
+                            <div class="horarioSpace"><p class="textFotter">De Segunda a Sexta-feira</p></div>
+                            <div class="horarioSpace"><p class="textFotter">das 8:00 as 19:00</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_esquerda gerais_div_footer">
+                    <div class="morgemSpace">
+                        <div style="color: var(--color-principal);"><p class="tittleFooter">Contato</p></div>
+                        <div class="contatoSpace"><div></div><p class="textFotter">(41) 99648-2073</p></div>
+                        <div class="contatoSpace"><div></div><p class="textFotter">(41) 99648-2073</p></div>
+                        <div class="contatoSpace"><div></div><p class="textFotter">sdfsdfd@dfgfsd.com</p></div>
+                    </div>
                 </div>
             </div>
         </footer>
-        <script src="js/links-open.js"></script>
+        <script src="js/links-redirect.js"></script>
+        <script src="js/links/link-index.js"></script>
         <script src="js/header.js"></script>
     </body>
 </html>

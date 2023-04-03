@@ -56,12 +56,14 @@ const loadImages = (info, container) => {
 
         container.innerHTML+= 
         `
-            <div class="boxServices">
-                <div class="boxPhotosServices" id="boxPhotosServices"><img src="${info[i].photo}" alt=""></div>
-                <div class="divTextServices">
-                    <div class="tittleServices"><p>${info[i].tittle}</p></div>
-                    <div class="textServices"><p>${info[i].text} </p></div>
-                    <div class="dots"></div>
+            <div style="display: flex;justify-content: center;">
+                <div class="boxServices">
+                    <div class="boxPhotosServices" id="boxPhotosServices"><img src="${info[i].photo}" alt=""></div>
+                    <div class="divTextServices">
+                        <div class="tittleServices"><p>${info[i].tittle}</p></div>
+                        <div class="textServices"><p>${info[i].text} </p></div>
+                        <div class="dots"></div>
+                    </div>
                 </div>
             </div>
 

@@ -35,6 +35,9 @@ textarea:focus-visible{
     display: none;
 }
 
+.serch{
+    margin-top: 71px;
+}
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++++++++++HEADER+++++++++++++++++++++++++++++++++++++++*/
@@ -352,9 +355,22 @@ textarea:focus-visible{
 
 
 
+.footer{
+    border-top: 3px solid var(--color-principal);
+    background-color: white;
+}
+.footerDesk{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
 
-
-
+@media (max-width: 740px){
+    .footerDesk{
+        display: none;
+    }
+}
 
 
 
@@ -464,29 +480,24 @@ textarea:focus-visible{
 
     /*footer*/
 
-.gerais_div_footer{
-    max-height: 180px;
-    min-height: 180px;
-    box-shadow: 1px 4px 11px rgb(0 0 0 / 23%);
+
+.footer{
+    border-top: 3px solid var(--color-principal);
+    background-color: white;
 }
-.footer_esquerda {
-    border-top-right-radius: 39px;
-    border-bottom-right-radius: 39px;
+.footerDesk{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+}
+
+@media (min-width: 740px){
+    .footerMobile{
+        display: none;
     
-}
-.footerLogo {
-    width: 91px;
-}
-
-
-.tittleFooter{
-    font-size: 31px;
-}
-.textFotter{
-    font-size: 25px;
-}
-
-
+    }
 }
 
 
@@ -507,14 +518,18 @@ textarea:focus-visible{
     margin-right: 4%;
     color: var(--color-cinza-destaque);
 }
+.serch{
+    margin-top: 70px;
+}
 }
 
-@media (min-width: 1200px) and (max-width:1800px){
+@media (min-width: 1200px) and (max-width:1900px){
 
 
 /*whatever*/
 .titulo{
     font-size: 48px;
+    margin-top: 132px;
 }
 
 
@@ -597,13 +612,23 @@ textarea:focus-visible{
 
 .divEmail{
     padding: 1%;
-    width: 30%;
-    font-size: 19px;
+    width: 41%;
     
+    
+}
+.input-mail {
+    height: 40px;
+    font-size: 21px;
 }
 .boxText{
     height: 199px;
-    font-size: 19px;
+    font-size: 21px;
+}
+.button-mail{
+    height: 40px;
+    font-size: 27px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -612,6 +637,142 @@ textarea:focus-visible{
 /**%^^^^^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^*/
 /**%^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^^^^^*/
 
+
+
+
+
+
+}
+
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^DESKTOPS^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+@media (min-width: 1901px){
+ 
+    
+
+/*whatever*/
+.titulo{
+    font-size: 48px;
+}
+.serch{
+    margin-top: 130px;
+}
+
+
+
+
+/*$$$$$$$$$header$$$$$$$$$$$*/
+
+.header{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.principalHeader{
+    height: 150px;
+}
+.logoHead{
+    gap: 40px;
+}
+.textHeader{
+    display: flex;
+    gap: 15px;   
+    font-size: 30px;
+}
+.photohead {
+    width: 76px;
+}
+.linksHead{
+    gap: 34px;
+    font-size: 29px;
+
+}
+.linkWhats{
+    width: 80px;
+}
+
+/*$$$$$main$$$$$$main$$$$$$$*/
+
+
+.bemvindo{
+    display: none;
+}
+#slider{
+    height: 432px;
+    width: 54%;
+    margin-top: 191px;
+}
+
+
+/*servicos*/
+
+.servicosCards{
+    gap: 77px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-top: 13px;
+}
+.cardServico{
+    padding-top: 20px;
+    font-size: 24px;
+    border-radius: 20px;
+    width: 310px;
+    height: 283px;
+    gap: 12px;
+    box-shadow: 8px 10px 11px rgb(0 0 0 / 16%);
+}
+.iconService{
+    width: 175px;
+}
+
+.buttonServicos{
+    width: 520px;
+    height: 70px;
+    font-size: 24px;
+    margin-top: 94px;
+    box-shadow: 6px 8px 9px rgb(0 0 0 / 12%);
+}
+
+
+/* email */
+
+.divEmail{
+    padding: 1%;
+    width: 41%;
+    
+    
+}
+.input-mail {
+    height: 40px;
+    font-size: 21px;
+}
+.boxText{
+    height: 199px;
+    font-size: 21px;
+}
+.button-mail{
+    height: 40px;
+    font-size: 27px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+/**%^^^^^^^^^^^^^^^^^FOOTER^^^^^^^^^^^^^^*/
+/**%^^^^^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^*/
+/**%^^^^^^FOOTER^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
 

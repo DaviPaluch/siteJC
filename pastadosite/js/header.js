@@ -19,3 +19,38 @@ function showNav(idButton){
 }
 
 navLinks.classList.add('display-none')
+
+
+
+
+function otherPage(redirect){
+    console.log(redirect)
+    switch(redirect){
+        case 'index':
+            const url = window.location.href;
+            var file = url.split('/');
+            var urlLength = file.length
+            if(url[4] == 'paginas'){
+                window.location.replace('index.html')
+            }else{
+                window.location.replace('../index.html')
+            }
+            break;
+        case 'servicos':
+            window.location.replace('/paginas/servicos.html')
+            break;
+        case 'contato':
+            window.location.replace('/paginas/contato.html')
+            break;
+        case 'empresa':
+            window.location.replace('/paginas/empresa.html')
+            break;
+        case 'whats':
+            window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5541996482073&text=Ol%C3%A1!%20Pode%20me%20ajudar%3F')
+            break;
+        default:break;
+    }
+}
+
+
+
