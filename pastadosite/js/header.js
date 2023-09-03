@@ -46,7 +46,8 @@ function otherPage(redirect){
             window.location.replace('/paginas/empresa.html')
             break;
         case 'whats':
-            window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5541996482073&text=Ol%C3%A1!%20Pode%20me%20ajudar%3F')
+            console.log("message")
+            window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5541996482073&text=Ol%C3%A1!%20Como%20a%20JC%20pode%20te%20ajudar?%3F')
             break;
         default:break;
     }

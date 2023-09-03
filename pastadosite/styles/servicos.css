@@ -15,38 +15,45 @@
 }
 .boxServices{
     width: 80%;
-    padding: 5%;
-    background-color: var(--color-cinza-destaque);
+    height: 284px;
+    padding: 3%;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 0px;
     border-radius: 10px;
+    box-shadow: 1px 4px 11px rgb(0 0 0 / 19%);
 }
 .boxPhotosServices{
     width: 150px;
     padding: 3%;
-    background-color: white;
     border-radius: 10px;
 
 }
 .boxPhotosServices img{
-    height: 150px;
+    height: 115px;
 
 }
 
 .divTextServices{
-    color: white;
+    color: black;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .tittleServices{
     text-align: center;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 600;
-    
+    height: 50px;
+    display: flex;
+    color: var(--color-principal);
+    align-items: center;
+    justify-content: center;
 }
 .textServices{
     margin-top: 15px;
-    text-align: start;
+    text-align: center;
     font-size: 17px;
 }
 .dots{
@@ -57,32 +64,66 @@
     gap: 10px;
     justify-content: space-between;
     text-align: start;
-    margin-top: 9px;
+    margin-top: 14px;
+    font-size: 15px;
+    color: var(--color-principal);
 }
+
+
+
 .dotsElement{
 
 }
 
 
 
-@media (min-width: 740px){
+
+
+
+@media (min-width: 740px) and (max-width: 1900px){
     .mainServices{
         display: grid;
-        grid-template-columns: repeat(auto-fit,25rem);
+        grid-template-columns: repeat(auto-fit,16rem);
         justify-content: center;
         padding: 0 5%;
+        gap: 60px;
     }
+    
     .boxServices{
-        height: 470px;
+        height: 319px;
         width: 100%;
     }
-    .divTextServices{
-        overflow-y: auto;
+    .tittleServices{
+        font-size: 18px;
+        height: 80px;
+    }
+    .textServices{
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1901px){
+    
+    .mainServices{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,23rem);
+        justify-content: center;
+        padding: 0 5%;
+        gap: 85px;
+    }
+    .boxServices{
+        height: 585px;
+        width: 100%;
     }
     .tittleServices{
         font-size: 26px;
+        height: 140px;
     }
     .textServices{
-        font-size: 24px;
+        font-size: 23px;
     }
+    .dots{
+        font-size: 23px;
+    }
+    
 }
